@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="logo">
-          <img src="logo.jpg" alt="Logo">
+          <img src="img/logo.png" alt="Logo" width="19" height="31">
           <p><span class="logo-text">Logo</span> Here</p>
         </a>
         <ul class="site-navigation">
@@ -19,7 +19,7 @@
           <li><a href="contact.html">Contact us</a></li>
         </ul>
         <p class="basket">$2170.00</p>
-        <ul class="user-navigation visially-hidden">
+        <ul class="user-navigation visually-hidden">
           <li><a href="account.html">My account</a></li>
           <li><a href="discount.html">Discoun</a>t</li>
           <li><a href="personal.html">Personal information</a></li>
@@ -43,13 +43,36 @@
       <p class="guarantee">©naturix farmfood. organic 100% guarantee</p>
       <div class="count">
           <p>02/05</p>
-          <button class="button prev">Previous</button>
-          <button class="button next">Next</button>
+          <button class="button prev" type="button">Previous</button>
+          <button class="button next" type="button">Next</button>
       </div>
 
       <section class="all-natural">
-        <h2 class="visially-hidden">organic all natural</h2>
-        <!-- form will be here -->
+        <h2 class="visually-hidden">organic all natural</h2>
+        <form class="all-natural-filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Product groups</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="radio" name="product-group" id="organic-fruits" value="organic-fruits">
+                <label for="organic-fruits">organic fruits</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="radio" name="product-group" id="organic-vegetables" value="organic-vegetables" checked>
+                <label for="organic-vegetables">organic vegetables</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="radio" name="product-group" id="organic-juices" value="organic-juices">
+                <label for="organic-juices">organic juices</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input" type="radio" name="product-group" id="organic-dried-fruits" value="organic-dried-fruits">
+                <label for="organic-dried-fruits">organic dried fruits</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button filter-button">Показать</button>
+        </form>
         <ul class="product-list">
           <li class="product-item">
             <a href="#">
@@ -124,7 +147,7 @@
       </section>
 
       <section class="products">
-        <h2 class="visially-hidden">our products</h2>
+        <h2 class="visually-hidden">our products</h2>
         <div class="product-group">
           <p class="uppercase-text">Fresh from our farm</p>
           <h3 class="product-group-title">220+ <span class="bold">fruits, vegetables</span> & <span class="bold">lot more</span></h3>
@@ -168,7 +191,38 @@
       <section class="organic-goods">
         <p class="uppercase-text">Fresh from our farm</p>
         <h2>naturix <span class="bold">organic goods</span></h2>
-        <!-- form will be here -->
+        <form class="organic-goods-filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Product groups</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" name="organic-goods-group" id="all-goods" value="all-goods">
+                <label for="all-goods">all goods</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" name="organic-goods-group" id="organic-goods-vegetables" value="organic-goods-vegetables">
+                <label for="organic-goods-vegetables">organic vegetables</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" name="organic-goods-group" id="organic-goods-fruits" value="organic-goods-fruits" checked>
+                <label for="organic-goods-fruits">organic fruits</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" name="organic-goods-group" id="organic-goods-tea" value="organic-goods-tea">
+                <label for="organic-goods-tea">organic tea</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" name="organic-goods-group" id="all-breads" value="all-breads">
+                <label for="all-breads">all breads</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input-radio" type="radio" name="organic-goods-group" id="organic-goods-juices" value="organic-goods-juices">
+                <label for="organic-goods-juices">organic juices</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button filter-button">Показать</button>
+        </form>
         <ul class="organic-goods-list">
           <li class="organic-good-item">
             <a href="#">
@@ -271,12 +325,12 @@
       </section>
 
       <section class="random-products">
-        <h2 class="visially-hidden">random products</h2>
+        <h2 class="visually-hidden">random products</h2>
         <div class="random-products-group">
           <p class="uppercase-text">New from the farm</p>
           <h3>organic <span class="bold">new arrivals</span></h3>
-          <button class="button prev">Previous</button>
-          <button class="button next">Next</button>
+          <button class="button prev" type="button">Previous</button>
+          <button class="button next" type="button">Next</button>
           <ul class="new-arrivals-list">
             <li class="new-arrivals-item">
               <a href="#">
@@ -304,8 +358,8 @@
         <div class="random-products-group">
           <p class="uppercase-text">Best seller</p>
           <h3>organic <span class="bold">popular</span></h3>
-          <button class="button prev">Previous</button>
-          <button class="button next">Next</button>
+          <button class="button prev" type="button">Previous</button>
+          <button class="button next" type="button">Next</button>
           <ul class="popular-list">
             <li class="popular-item">
               <a href="#">
@@ -333,8 +387,8 @@
         <div class="random-products-group">
           <p class="uppercase-text">Costumer needs</p>
           <h3>organic <span class="bold">random</span></h3>
-          <button class="button prev">Previous</button>
-          <button class="button next">Next</button>
+          <button class="button prev" type="button">Previous</button>
+          <button class="button next" type="button">Next</button>
           <ul class="random-list">
             <li class="random-item">
               <a href="#">
@@ -362,7 +416,7 @@
       </section>
       
       <section class="promo">
-        <h2 class="visially-hidden">promo products</h2>
+        <h2 class="visually-hidden">promo products</h2>
         <ul class="promo-products">
           <li class="promo-item">
             <p class="uppercase-text">Fresh from our farm: greem olive</p>
@@ -384,7 +438,11 @@
       <section class="subscrite">
         <p class="uppercase-text">Join our newsletter</p>
         <h2>subscribe <span class="bold">newsletter</span></h2>
-        <!-- form will be here -->
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="email-field">Электронная почта</label>
+          <input type="email" id="email-field" name="email" placeholder="enter your email address">
+          <button class="button" type="submit">subscribe</button>
+        </form>
       </section>
 
       <section class="testimonials">
@@ -399,8 +457,8 @@
             <p class="testimonial-author">LUIS GARCHIA</p>
           </li>
         </ul>
-        <button class="button prev">Previous</button>
-        <button class="button next">Next</button>
+        <button class="button prev" type="button">Previous</button>
+        <button class="button next" type="button">Next</button>
       </section>
 
       <article class="blog">
@@ -425,7 +483,7 @@
 
     <footer class="main-footer">
       <div class="about-us">
-        <h3 class="visially-hidden">About us</h3>
+        <h3 class="visually-hidden">About us</h3>
         <a class="logo">
           <img src="img/logo.png" alt="Logo" width="19" height="31">
           <p><span class="logo-text">Logo</span> Here</p>
