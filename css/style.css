@@ -1,0 +1,514 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 900px;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #525252;
+
+  background-color: #ffffff;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.list-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+
+  padding: 8px 20px;
+  border-radius: 25px;
+}
+
+.logo p {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.logo .bold {
+  color: #333333;
+}
+
+.site-navigation a,
+.basket {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #ffffff;
+  background-color: #81ba00;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+
+.user-navigation a {
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: #ffffff;
+  background-color: #81ba00;
+  padding: 5px 15px;
+}
+
+.main-title {
+  margin: 0;
+  font-size: 70px;
+  line-height: 84px;
+  font-weight: 300;
+  color: #333333;
+  text-align: center;
+}
+
+.main-slogan {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #333333;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.main-button {
+  background-image: 
+    url("../img/button-bg.png"),
+    linear-gradient(rgb(179,213,151) 0%, rgb(79,195,216) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 94% 80%, cover;
+  padding: 15px 45px;
+  color: #444444;
+  text-transform: uppercase;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.main-button:hover,
+.main-button:focus {
+  color: #81ba00;
+}
+
+.social-list a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #bababa;
+  text-align: center;
+  background-color: #faf8f5;
+  border: 1px solid #bababa;
+  border-radius: 50%;
+}
+
+.social-list li {
+  margin: 5px;
+}
+
+.guarantee {
+  font-size: 15px;
+  line-height: 18px;
+  color: #888888;
+  font-weight: 500;
+}
+
+.guarantee .bold {
+  font-weight: 900;
+}
+
+.green-text {
+  color: #79b100;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pages {
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+  
+}
+
+.all-pages {
+  vertical-align: top;
+}
+
+.green-number {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 900;
+  color: #79b100;
+}
+
+button.next,
+button.prev {
+  font-size: 10px;
+  line-height: 12px;
+  color: #9f9f9f;
+  border: none;
+  background-color: #ffffff;
+  padding: 6px 13px;
+}
+
+button.next {
+  border-radius: 0 25px 25px 0;
+}
+
+button.prev {
+  border-radius: 25px 0 0 25px;
+}
+
+button.next:hover,
+button.next:focus,
+button.prev:hover,
+button.prev:focus {
+  border: 1px solid #9f9f9f;
+}
+
+.all-natural h2:after {
+  content: "";
+  background-image: url("../img/organic.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 150px;
+}
+
+.filter-option {
+  font-size: 16px;
+  line-height: 19px;
+  color: #9f9e9c;
+}
+
+.filters-list {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-option label {
+  display: block;
+  width: 180px;
+  height: 45px;
+  border: 1px solid #9f9e9c;
+  border-radius: 25px;
+  text-align: center;
+  padding: 11px 0;
+}
+
+.filter-option label:hover,
+.filter-option label:focus {
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #81ba00;
+  border-color: #81ba00;
+  border-radius: 25px;
+  color: #ffffff;
+}
+
+.product-name {
+  font-size: 20px;
+  line-height: 24px;
+  color: #525252;
+  font-weight: 400;
+  text-align: center;
+}
+
+.product-cost {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 16px;
+  color: #7fbb00;
+  font-weight: 600;
+  text-align: center;
+}
+
+.old-price {
+  position: relative;
+  color: #dddddd;
+}
+
+.old-price::before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: -1px;
+  width: 47px;
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.features,
+.deals {
+  background-color: #f7f6f2;
+}
+
+.features h2,
+.organic-goods h2,
+.deals h2 {
+  margin: 0;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.text-annotation {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.farmfood-description {
+  font-size: 16px;
+  line-height: 28px;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  width: 880px;
+}
+
+.features-item h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.features-item p {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 270px;
+  text-align: center;
+}
+
+.features-item a {
+  font-size: 12px;
+  line-height: 14px;
+  color: #bac3c3;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px 27px;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.features-list li:first-child a:hover,
+.features-list li:first-child a:focus {
+  color: #ffffff;
+  background-color: #bad19b;
+  border-color: #bad19b;
+}
+
+.features-list li:nth-child(2) a:hover,
+.features-list li:nth-child(2) a:focus {
+  color: #ffffff;
+  background-color: #f7dda3;
+  border-color: #f7dda3;
+}
+
+.features-list li:nth-child(3) a:hover,
+.features-list li:nth-child(3) a:focus {
+  color: #ffffff;
+  background-color: #faa893;
+  border-color: #faa893;
+}
+
+.features-list li:last-child a:hover,
+.features-list li:last-child a:focus {
+  color: #ffffff;
+  background-color: #e8d5cb;
+  border-color: #e8d5cb;
+}
+
+.product-group-title {
+  margin: 0;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 300;
+  width: 470px;
+}
+
+.product-group-description {
+  font-size: 16px;
+  line-height: 29px;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 470px;
+}
+
+.product-group-item .product-name {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.product-group-item .products-quantity {
+  font-size: 13px;
+  line-height: 16px;
+  font-style: italic;
+  color: #7fb900;
+  text-align: center; 
+}
+
+.organic-goods {
+  flex-direction: column;
+}
+
+.organic-goods h2 {
+  margin: 0;
+  display: inline-block;
+  border: 1px solid #e6e6e6;
+  border-radius: 50px;
+  padding: 10px 40px;
+  margin: auto;
+}
+
+.filter-option-goods label {
+  font-size: 14px;
+  line-height: 17px;
+  padding: 5px 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 25px;
+}
+
+.deals-description,
+.deal-products-description {
+  font-size: 14px;
+  line-height: 25px;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 400px;
+}
+
+.time-count li {
+  margin-right: 5px;
+  text-align: center;
+  background-image: url("../img/time-count-bg.png"), linear-gradient(rgb(179,213,151) 0%, rgb(79,195,216) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 88% 88%, cover;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+}
+
+.number {
+  font-size: 40px;
+  line-height: 48px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.time {
+  color: #74d1d1;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  display: block;
+  margin-top: -8px;
+}
+
+.deal-products .text-annotation {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 4px;
+}
+
+.deal-products h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.deal-products-description {
+  width: 270px;
+}
+
+.paggination-list li {
+  margin-right: 7px;
+}
+
+.paggination-list a {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  color: #bfbfbf;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 5px 0;
+}
+
+.current-item a,
+.paggination-list a:hover,
+.paggination-list a:focus {
+  color: #ffffff;
+  background-color: #90d3a6;
+}
+
+.img-fresh-pineapple {
+  padding: 140px;
+  background-image: url("../img/fresh-pineapple.png"), url("../img/background-farmfood.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: darken;
+}
+
+.img-fresh-rasberry {
+  padding: 140px;
+  background-image: url("../img/fresh-rasberry.png");
+  background-repeat: no-repeat;
+}
