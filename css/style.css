@@ -61,6 +61,7 @@ a {
 }
 
 .logo p {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 300;
@@ -194,9 +195,10 @@ button.prev {
   font-size: 10px;
   line-height: 12px;
   color: #9f9f9f;
-  border: none;
+  border: 1px solid #ffffff;
   background-color: #ffffff;
-  padding: 6px 13px;
+  padding: 5px 11px;
+  border-left-color: #ebeae7;
 }
 
 button.next {
@@ -211,7 +213,8 @@ button.next:hover,
 button.next:focus,
 button.prev:hover,
 button.prev:focus {
-  border: 1px solid #9f9f9f;
+  cursor: pointer;
+  border: 1px solid #ebeae7;
 }
 
 .all-natural h2:after {
@@ -287,7 +290,8 @@ input[type="radio"]:checked + label {
 }
 
 .features,
-.deals {
+.deals,
+.subscribe {
   background-color: #f7f6f2;
 }
 
@@ -422,6 +426,15 @@ input[type="radio"]:checked + label {
   border-radius: 25px;
 }
 
+.deals h2::after {
+  content: "";
+  padding: 100px;
+  background-image: url("../img/tomatos.png"), url("../img/background-farmfood.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: darken;
+  background-position: center;
+}
+
 .deals-description,
 .deal-products-description {
   font-size: 14px;
@@ -511,4 +524,312 @@ input[type="radio"]:checked + label {
   padding: 140px;
   background-image: url("../img/fresh-rasberry.png");
   background-repeat: no-repeat;
+}
+
+.random-products h2::after {
+  content: "";
+  padding: 100px;
+  background-image: url("../img/random-image.jpg");
+  background-repeat: no-repeat;
+}
+
+.random-products-slogan {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.random-products-slogan i {
+  font-size: 10px;
+  color: #8dd3a5;
+}
+
+.random-products .text-annotation {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 4px;
+}
+
+.random-products h3 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 300;
+}
+
+.random-products button.prev,
+.random-products button.next {
+  border: 1px solid #ebeae7;
+}
+
+.buttons {
+  position: relative;
+}
+
+button.next {
+  position: absolute;
+  top: 2px;
+  left: 33px;
+}
+
+.new-arrivals-item .product-name,
+.popular-item .product-name,
+.random-item .product-name {
+  font-size: 18px;
+  line-height: 22px;;
+}
+
+.promo .text-annotation {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.promo-group-vegetable,
+.promo-group-fruits {
+  font-size: 40px;
+  line-height: 48px;
+  font-family: "Great Vibes", cursive;
+}
+
+.promo-group-vegetable {
+  color: #95a200;
+}
+
+.promo-group-fruits {
+  color: #ffbe00;
+}
+
+.promo-item h3 {
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.promo-period {
+  font-size: 11px;
+  line-height: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2.3px;
+}
+
+.promo-item a {
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  border: 4px solid #eeeeee;
+}
+
+.button-green {
+  background-color: #b8c800;
+}
+
+.button-orange {
+  background-color: #ffbd0e;
+}
+
+.text-green {
+  color: #a7c57f;
+}
+
+.text-orange {
+  color: #afa765;
+}
+
+.subscribe {
+  padding-bottom: 25px;
+}
+
+.subscribe .text-annotation {
+  letter-spacing: 4.7px;
+}
+
+.subscribe h2 {
+  margin: 0;
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 300;
+}
+
+.subscribe input {
+  padding: 20px 20px 20px 38px;
+  width: 550px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.subscribe input::placeholder {
+  font-size: 15px;
+  line-height: 18px;
+  color: #cccccc;
+}
+
+.subscribe input::-ms-input-placeholder {
+  font-size: 15px;
+  line-height: 18px;
+  color: #cccccc;
+}
+
+.subscribe input:-ms-input-placeholder {
+  font-size: 15px;
+  line-height: 18px;
+  color: #cccccc;
+}
+
+.subscribe .button {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  background-color: #7cc000;
+  border: none;
+  border-radius: 30px;
+  font-weight: 300;
+  padding: 17px 42px 17px 55px;
+  cursor: pointer;
+}
+
+.testimonial-text {
+  font-size: 17px;
+  line-height: 25px;
+  font-family: "Lora", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #aaaaaa;
+  width: 275px;
+}
+
+.testimonial-author {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.fa-user {
+  color: #b8ca00;
+}
+
+.testimonials button.prev,
+.testimonials button.next {
+  border: 1px solid #ebeae7;
+}
+
+.blog h2 {
+  margin: 0;
+  font-size: 35px;
+  line-height: 42px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.article-item time {
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.article-item h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 31px;
+  font-weight: 300;
+  width: 247px;
+}
+
+.article-item p {
+  font-size: 14px;
+  line-height: 25px;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 275px;
+}
+
+.article-item a {
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #999999;
+  font-weight: 500;
+}
+
+.article-item a:hover,
+.article-item a:focus {
+  color: #84c400;
+}
+
+.about-us {
+  width: 345px;
+}
+
+.about-us p {
+  margin: 0;
+}
+
+.about-us-text {
+  line-height: 21px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.address .bold,
+.about-us .website,
+.email i {
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.website a {
+  font-weight: 500;
+  color: #7abf00;
+}
+
+.info h3,
+.my-account h3,
+.photo-instagram h3 {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.info-list a {
+  font-size: 15px;
+  line-height: 33px;
+  color: #525252;
+}
+
+.info-list i {
+  color: #e1e0de;
+}
+
+.footer-bottom p {
+  line-height: 21px;
+  color: #999999;
+}
+
+.footer-conditions-menu {
+  width: 400px;
+  justify-content: space-between;
+}
+
+.footer-conditions-menu a {
+  font-size: 15px;
+  line-height: 21px;
+  color: #999999;
+  font-weight: 500;
+}
+
+.footer-conditions-menu .current {
+  color: #545454;
+}
+
+.arrow {
+  font-size: 28px;
+  line-height: 34px;
+  color: #e2e1de;
 }

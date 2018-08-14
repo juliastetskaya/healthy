@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>Healthy Shop</title>
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900" rel="stylesheet">
     <script src="https://use.fontawesome.com/526e0a75b9.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -62,14 +65,16 @@
       <p class="guarantee">©<span class="bold">naturix</span> farmfood. <span class="green-text">organic 100% guarantee</span></p>
       <div class="count">
           <p class="pages"><span class="green-number">02 </span><span class="all-pages">/05</span></p>
-          <button class="button prev" type="button">
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-            <!-- <span class="visually-hidden">Previous</span> -->
-          </button>
-          <button class="button next" type="button">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            <!-- <span class="visually-hidden">Next</span> -->
-          </button>
+          <div class="buttons">
+            <button class="button prev" type="button">
+              <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+              <!-- <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="button next" type="button">
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+          </div>
       </div>
 
       <section class="all-natural">
@@ -357,30 +362,41 @@
 
       <section class="random-products">
         <h2 class="visually-hidden">random products</h2>
+        <p class="random-products-slogan">
+          <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i> a taste of  <span class="bold">real food</span> <i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i>
+        </p>
         <div class="random-products-group">
           <p class="text-annotation">New from the farm</p>
-          <h3>organic <span class="bold">new arrivals</span></h3>
-          <button class="button prev" type="button">Previous</button>
-          <button class="button next" type="button">Next</button>
-          <ul class="new-arrivals-list">
+          <h3>organic <span class="black">new arrivals</span></h3>
+          <div class="buttons">
+            <button class="button prev" type="button">
+              <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+              <!-- <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="button next" type="button">
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+          </div>
+          <ul class="new-arrivals-list list-style">
             <li class="new-arrivals-item">
               <a href="#">
                 <img src="img/organic-blackberry.jpg" alt="organic blackberry" width="130" height="97">
-                <p>organic <span class="bold">blackberry</span></p>
+                <p class="product-name">organic <span class="black">blackberry</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
             <li class="new-arrivals-item">
               <a href="#">
                 <img src="img/organic-peach.jpg" alt="organic peach" width="150" height="108">
-                <p>organic <span class="bold">peach</span></p>
+                <p class="product-name">organic <span class="black">peach</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
             <li class="new-arrivals-item">
               <a href="#">
                 <img src="img/organic-redberry.jpg" alt="organic redberry" width="130" height="92">
-                <p>organic <span class="bold">redberry</span></p>
+                <p class="product-name">organic <span class="black">redberry</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
@@ -389,27 +405,35 @@
         <div class="random-products-group">
           <p class="text-annotation">Best seller</p>
           <h3>organic <span class="bold">popular</span></h3>
-          <button class="button prev" type="button">Previous</button>
-          <button class="button next" type="button">Next</button>
-          <ul class="popular-list">
+          <div class="buttons">
+            <button class="button prev" type="button">
+              <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+              <!-- <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="button next" type="button">
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+          </div>
+          <ul class="popular-list list-style">
             <li class="popular-item">
               <a href="#">
                 <img src="img/organic-srawberry.jpg" alt="organic srawberry" width="140" height="112">
-                <p>organic <span class="bold">srawberry</span></p>
+                <p class="product-name">organic <span class="bold">srawberry</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
             <li class="popular-item">
               <a href="#">
                 <img src="img/organic-mushroom.jpg" alt="organic mushroom" width="150" height="92">
-                <p>organic <span class="bold">mushroom</span></p>
+                <p class="product-name">organic <span class="bold">mushroom</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
             <li class="popular-item">
               <a href="#">
                 <img src="img/organic-apple.jpg" alt="organic apple" width="140" height="117">
-                <p>organic <span class="bold">apple</span></p>
+                <p class="product-name">organic <span class="bold">apple</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
@@ -418,27 +442,35 @@
         <div class="random-products-group">
           <p class="text-annotation">Costumer needs</p>
           <h3>organic <span class="bold">random</span></h3>
-          <button class="button prev" type="button">Previous</button>
-          <button class="button next" type="button">Next</button>
-          <ul class="random-list">
+          <div class="buttons">
+            <button class="button prev" type="button">
+              <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+              <!-- <span class="visually-hidden">Previous</span> -->
+            </button>
+            <button class="button next" type="button">
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              <!-- <span class="visually-hidden">Next</span> -->
+            </button>
+          </div>
+          <ul class="random-list list-style">
             <li class="random-item">
               <a href="#">
                 <img src="img/organic-grapes.jpg" alt="organic grapes" width="140" height="105">
-                <p>organic <span class="bold">grapes</span></p>
+                <p class="product-name">organic <span class="bold">grapes</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
             <li class="random-item">
               <a href="#">
                 <img src="img/organic-blackberry.jpg" alt="organic blackberry" width="130" height="97">
-                <p>organic <span class="bold">blackberry</span></p>
+                <p class="product-name">organic <span class="bold">blackberry</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
             <li class="random-item">
               <a href="#">
                 <img src="img/organic-beans.jpg" alt="organic beans" width="150" height="83">
-                <p>organic <span class="bold">beans</span></p>
+                <p class="product-name">organic <span class="bold">beans</span></p>
               </a>
               <p class="product-cost">$50.00</p>
             </li>
@@ -448,65 +480,79 @@
       
       <section class="promo">
         <h2 class="visually-hidden">promo products</h2>
-        <ul class="promo-products">
+        <ul class="promo-products list-style">
           <li class="promo-item">
-            <p class="text-annotation">Fresh from our farm: greem olive</p>
-            <p>Vegetable</p> 
-            <h3>Green Olive</h3>
-            <p class="text-annotation">35% off in june-july</p>
-            <a class="button" href="#">Shop now</a>
+            <p class="text-annotation text-green">Fresh from our farm : <span class="black">&nbsp;green olive</span></p>
+            <p class="promo-group-vegetable">Vegetable</p> 
+            <h3>Green <span class="black">Olive</span></h3>
+            <p class="promo-period">35% off in june-july</p>
+            <a class="button button-green" href="#">Shop now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
           </li>
           <li class="promo-item">
-            <p class="text-annotation">Fresh summer fruits</p>
-            <p>Fruits</p> 
-            <h3>All summer</h3>
-            <p class="text-annotation">35% off in june-july</p>
-            <a class="button" href="#">Shop now</a>
+            <p class="text-annotation text-orange">Fresh summer <span class="black">fruits</span></p>
+            <p class="promo-group-fruits">Fruits</p> 
+            <h3>All <span class="black">summer</span></h3>
+            <p class="promo-period">35% off in june-july</p>
+            <a class="button button-orange" href="#">Shop now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </a>
           </li>
         </ul>
       </section>
 
-      <section class="subscrite">
+      <section class="subscribe">
         <p class="text-annotation">Join our newsletter</p>
-        <h2>subscribe <span class="bold">newsletter</span></h2>
+        <h2>subscribe <span class="black">newsletter</span></h2>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email-field">Электронная почта</label>
           <input type="email" id="email-field" name="email" placeholder="enter your email address">
-          <button class="button" type="submit">subscribe</button>
+          <button class="button" type="submit">subscribe&nbsp;
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+          </button>
         </form>
       </section>
 
       <section class="testimonials">
         <h2>testimonials</h2>
-        <ul class="testimonials-list">
+        <ul class="testimonials-list list-style">
           <li class="testimonials-item">
             <p class="testimonial-text">“Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed the diam nonummy nibh euismod tincidunt.”</p>
-            <p class="testimonial-author">LUIS GARCHIA</p>
+            <p class="testimonial-author"><i class="fa fa-user" aria-hidden="true"></i> &nbsp;LUIS &nbsp;GARCHIA</p>
           </li>
           <li class="testimonials-item">
             <p class="testimonial-text">“Lorem ipsum dolor sit amet, consectetuer adipiscing elitsed the diam nonummy nibh euismod tincidunt.”</p>
-            <p class="testimonial-author">LUIS GARCHIA</p>
+            <p class="testimonial-author"><i class="fa fa-user" aria-hidden="true"></i> &nbsp;LUIS &nbsp;3GARCHIA</p>
           </li>
         </ul>
-        <button class="button prev" type="button">Previous</button>
-        <button class="button next" type="button">Next</button>
+        <div class="buttons">
+          <button class="button prev" type="button">
+            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+          <button class="button next" type="button">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <!-- <span class="visually-hidden">Next</span> -->
+          </button>
+        </div>
       </section>
 
       <article class="blog">
         <p class="text-annotation">Naturix blog</p>
         <h2>naturix <span class="bold">latest news</span></h2>
-        <ul class="articles-list">
+        <ul class="articles-list list-style">
           <li class="article-item">
-            <time datetime="2061-06-26">26 JUNE 2016</time>
-            <h3>5 best foods to make you <span class="bold">fresh & healthy</span></h3>
+            <time datetime="2061-06-26">26 June 2016</time>
+            <h3>5 best foods to make you <span class="black">fresh & healthy</span></h3>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</p>
-            <a href="#">Read article</a>
+            <a href="#">Read article &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
           </li>
           <li class="article-item">
-            <time datetime="2061-06-26">26 JUNE 2016</time>
-            <h3>5 best foods to make you <span class="bold">fresh & healthy</span></h3>
+            <time datetime="2061-06-26">26 June 2016</time>
+            <h3>5 best foods to make you <span class="black">fresh & healthy</span></h3>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</p>
-            <a href="#">Read article</a>
+            <a href="#">Read article &nbsp;<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
           </li>
         </ul>
       </article>
@@ -518,36 +564,76 @@
           <h3 class="visually-hidden">About us</h3>
           <a class="logo">
             <img src="img/logo.png" alt="Logo" width="19" height="31">
-            <p><span class="logo-text">Logo</span> Here</p>
+            <p><span class="bold">naturix</span> farmfood</p>
           </a>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
-          <p><span class="bold">100 highland ave</span>, california, united state</p>
-          <p>contact@naturix.com</p>
-          <a href="#">www.website.com</a>
+          <p class="about-us-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+          <p class="address">
+            <span class="bold">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              100 highland ave</span>, california, united state
+          </p>
+          <p class="email">
+            <i class="fa fa-envelope-square"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            contact@naturix.com
+          </p>
+          <p class="website">
+            <i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="#">www.website.com</a>
+          </p>
         </section>
         <section class="info">
-          <h3>naturix <span class="bold">information</span></h3>
-          <ul class="info-list">
-            <li><a href="#">about our shop</a></li>
-            <li><a href="#">top sellers</a></li>
-            <li><a href="#">our blog</a></li>
-            <li><a href="#">new products</a></li>
-            <li><a href="#">secure shopping</a></li>
+          <h3>naturix <span class="black">information</span></h3>
+          <ul class="info-list list-style">
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">about our shop</a>
+            </li>
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">top sellers</a>
+            </li>
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">our blog</a>
+            </li>
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">new products</a>
+            </li>
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">secure shopping</a>
+            </li>
           </ul>
         </section>
         <section class="my-account">
-          <h3>my <span class="bold">account</span></h3>
-          <ul class="info-list">
-            <li><a href="#">my account</a></li>
-            <li><a href="#">discount</a></li>
-            <li><a href="#">personal information</a></li>
-            <li><a href="#">my address</a></li>
-            <li><a href="#">order history</a></li>
+          <h3>my <span class="black">account</span></h3>
+          <ul class="info-list list-style">
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">my account</a>
+            </li>
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">discount</a>
+            </li>
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">personal information</a>
+            </li>
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">my address</a>
+            </li>
+            <li>
+              <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>&nbsp;
+              <a href="#">order history</a>
+            </li>
           </ul>
         </section>
         <section class="photo-instagram">
-          <h3>photo <span class="bold">instagram</span></h3>
-          <ul class="photo-instagram-list">
+          <h3>photo <span class="black">instagram</span></h3>
+          <ul class="photo-instagram-list list-style">
             <li class="photo-instagram-item"><a href="#">photo-1</a></li>
             <li class="photo-instagram-item"><a href="#">photo-2</a></li>
             <li class="photo-instagram-item"><a href="#">photo-3</a></li>
@@ -557,13 +643,16 @@
           </ul>
         </section>
       </div>
+      <div class="arrow">
+        <i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+      </div>
       <div class="footer-bottom">
         <p>©2017 ,, all right reserved</p>
-        <ul class="footer-conditions-menu">
-          <li class="footer-conditions-item current"><a href="#">contact us</a></li>
-          <li class="footer-conditions-item"><a href="#">term of use</a></li>
-          <li class="footer-conditions-item"><a href="#">site map</a></li>
-          <li class="footer-conditions-item"><a href="#">privacy policy</a></li>
+        <ul class="footer-conditions-menu list-style flex">
+          <li><a class="current" href="#">contact us</a></li>
+          <li><a href="#">term of use</a></li>
+          <li><a href="#">site map</a></li>
+          <li><a href="#">privacy policy</a></li>
         </ul>
       </div>
     </footer>
